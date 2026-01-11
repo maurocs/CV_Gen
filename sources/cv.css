@@ -1,0 +1,294 @@
+/* raleway-300 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/raleway-v29-latin_latin-ext-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-regular - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/raleway-v29-latin_latin-ext-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-600 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/raleway-v29-latin_latin-ext-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-800 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./fonts/raleway-v29-latin_latin-ext-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-900 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/raleway-v29-latin_latin-ext-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-300 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/lato-v24-latin_latin-ext-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-regular - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/lato-v24-latin_latin-ext-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-700 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/lato-v24-latin_latin-ext-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-900 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/lato-v24-latin_latin-ext-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Scope all CV styles to #cv-preview to prevent conflicts with app.css */
+#cv-preview {
+    --color-accent: #00678f;
+    --color-notes: #3f3f3f;
+
+    font-family: 'Lato';
+    width: 100%;
+    letter-spacing: 0.5px;
+    background: white;
+    color: #000;
+    line-height: 1.2;
+    /* Explicit black text for CV content */
+}
+
+#cv-preview * {
+    margin: 0;
+    color: inherit;
+    /* Inherit from #cv-preview */
+}
+
+#cv-preview header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#cv-preview .icon {
+    margin: 0;
+    height: 18px;
+}
+
+#cv-preview header .personal__info {
+    width: 100%;
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#cv-preview header h1 {
+    font-weight: 100;
+}
+
+#cv-preview header h1 span {
+    font-weight: 400;
+}
+
+#cv-preview header h2 {
+    margin-left: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+#cv-preview header h2 span {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--color-notes)
+}
+
+#cv-preview header .personal__info p {
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#cv-preview header .personal__info a {
+    font-weight: 300;
+    text-decoration: none;
+    color: #000;
+    /* Explicit black for links */
+}
+
+#cv-preview main {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    gap: 20px;
+}
+
+#cv-preview .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#cv-preview .left__col {
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+#cv-preview .right__col {
+    flex: 0 1 240px;
+}
+
+#cv-preview section h2 {
+    font-weight: 100;
+}
+
+#cv-preview section h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#cv-preview section h3 span {
+    font-weight: 300;
+    color: var(--color-notes)
+}
+
+#cv-preview section h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+#cv-preview section h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#cv-preview .subsection {
+    margin-bottom: 10px;
+}
+
+#cv-preview .subsection .note {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--color-notes)
+}
+
+#cv-preview .list__item::before {
+    content: '• ';
+}
+
+#cv-preview .list__item {
+    font-weight: 300;
+    display: inline-block;
+}
+
+#cv-preview .cont__list {
+    font-weight: 300;
+}
+
+#cv-preview footer {
+    padding: 15px;
+    font-size: 12px;
+    color: var(--color-notes);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cv-preview main::before {
+    content: " ";
+    width: 100%;
+    height: 3px;
+    background: #7daad12c;
+}
+
+/* Print Media Queries for PDF Export */
+@media print {
+    #cv-preview {
+        width: 100%;
+    }
+
+    /* Prevent page breaks inside important sections */
+    #cv-preview .subsection {
+        page-break-inside: avoid;
+    }
+
+    #cv-preview section {
+        page-break-inside: avoid;
+    }
+
+    /* Ensure links are visible in PDF */
+    #cv-preview a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    /* Hide icons to prevent tainted canvas */
+    #cv-preview .icon {
+        display: none !important;
+    }
+
+    /* Hide unnecessary elements in print */
+    #cv-preview footer {
+        display: none;
+    }
+}
