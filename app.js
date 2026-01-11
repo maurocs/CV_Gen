@@ -162,9 +162,9 @@ const app = {
                         this.saveToStorage();
                         this.renderForm();
                         this.renderPreview();
-                        this.showToast('Data imported successfully!', 'success');
+                        this.showToast('Información cargada correctamente!', 'success');
                     } catch (error) {
-                        this.showToast('Error importing data. Invalid JSON file.', 'error');
+                        this.showToast('Error cargando la información.', 'error');
                     }
                 };
                 reader.readAsText(file);
@@ -691,7 +691,7 @@ const app = {
     setPaperSize(size) {
         this.paperSize = size;
         this.updatePreviewSize();
-        this.showToast(`Paper size set to ${size.toUpperCase()}`, 'success');
+        this.showToast(`Tamaño: ${size.toUpperCase()}`, 'success');
     },
 
     // Update preview size based on paper format
@@ -719,7 +719,7 @@ const app = {
     // Export to PDF using selected paper size
     async exportPDF() {
         const format = this.paperSize;
-        this.showToast('Generating PDF...', 'success');
+        this.showToast('Generando PDF...', 'success');
 
         const element = document.getElementById('cv-preview');
         const firstName = this.data.personalInfo.firstName || 'CV';
@@ -753,10 +753,10 @@ const app = {
 
         try {
             await html2pdf().set(options).from(element).save();
-            this.showToast(`PDF exported successfully (${format.toUpperCase()})!`, 'success');
+            this.showToast(`PDF exportado (${format.toUpperCase()})!`, 'success');
         } catch (error) {
-            this.showToast('Error generating PDF. Please try again.', 'error');
-            console.error('PDF Export Error:', error);
+            this.showToast('Error generando PDF. Intenta nuevamente.', 'error');
+            console.error('Error exportando PDF:', error);
         } finally {
             // Restore icons
             icons.forEach(icon => {
@@ -820,3 +820,4 @@ const app = {
 document.addEventListener('DOMContentLoaded', () => {
     app.init();
 });
+
